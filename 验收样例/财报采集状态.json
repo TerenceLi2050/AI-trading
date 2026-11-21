@@ -1,0 +1,11 @@
+{
+  "state": "COLLECTED",
+  "created_utc": "2026-11-21T09:19:09+00:00",
+  "start": "2024-01-01",
+  "end": "2025-05-30",
+  "filings": {
+    "documents": 123,
+    "unresolved_security_codes": [],
+    "normalized_financials": "FIELD_REVIEW_REQUIRED"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "rows": 207901,
+  "securities": 800,
+  "sessions": 260,
+  "internal_missing_stock_sessions": 0,
+  "gap_events": 0,
+  "longest_internal_gap": 0,
+  "missing_explicit_trade_status": 0,
+  "missing_historical_st": 0,
+  "source_rows": {
+    "baostock_raw_and_hfq": 207901
+  },
+  "created_utc": "2026-11-21T09:32:26+00:00",
+  "source": "independent_daily_release",
+  "release_path": "data\\daily\\20261120-63e29c06ebf0\\manifest.json",
+  "manifest_sha256": "f67686e4ff0ad877a161f5bdbe54af3a69fafcf53bfc6ff87c7a4052261fb4c1",
+  "config_sha256": "679437234dbbc7b1aef6299d22fc98f90465bffa2f8756e5626729c40f10376e",
+  "code_sha256": {
+    "__init__.py": "ac0f2a7c749ccbadb01e06d7ffe98e89fc59baf390984963587786c11403f05d",
+    "allocation.py": "439a1e1df69eb92815ffa9ab5379fec68f8bdd702a4d337438a75d389c5feec5",
+    "backtest.py": "a3dbad24961e70fe7ff3063861668e23b662086f3391a8f2fea77999c493406b",
+    "cli.py": "292f0fe92eabc6ae0f255828b11333db4b677f26bc53f89bcf8a74e3acc926f8",
+    "config.py": "01335ea7782f6cd40bf65c9ba80c41d3c00f4af99f3b138f68cff57c15f0b5e2",
+    "current.py": "439f42b6797f1395ceed0d2760232e08cbcb344192c6cc8ed291b68f0276cd27",
+    "daily.py": "f4e45457512b020a8a398842c9f34aef30d408f224b2dd36b52bfdda80f1c984",
+    "daily_run.py": "f63b6cb0c9a5cb7dfd70f2e34d85b86b5698a012bff9c008fe1f914340891fca",
+    "data.py": "935548342b76bbe91e495f3d9b197cd4bbeb80ea6a1095b3070799c36fd61a76",
+    "features.py": "4b1ee0432d1bbaf56b57011c5e2cfc8a084b702afca58365c1cf7195c30dd29e",
+    "history.py": "591b630eccc29faa6eed12ab2cfaff4856c6fdf76c7d65d38b4590a875fc6478",
+    "io.py": "292f3f84db4f2de6125126bd5ff5a7b106f02de75fb447c62392a9c7bea80792",
+    "labels.py": "464c83ca4e7ae8d35d51a7ecc0bac5da73c297b9033ea0428895a4bdd1fcc794",
+    "market.py": "9f94338b4afc619467e0b55cdd6170e09067b9c23d320f50beeb3019076d6dd9",
+    "models.py": "3cd0e156dcb09367eaf15c89490bcd2f6a1e9cc356467adc0e19a3dc77fb959a",
+    "pit.py": "a2cf18a72f556bfbacabea599da6ec9f2b3a7b606e7d4886526454cba3b054eb",
+    "protocol.py": "4eb071dce8810432dd045b4609bd4c91aca45465dec198eaddffd27fbc7b3fa9",
+    "providers.py": "4dc5ad787ebf0b3af3133e6200c4bb84a4cef79ac0217dc42ce3ef8b14e9ab69",
+    "quality_study.py": "08f232340429fe38889afe5ccdc1b8fac7b26dfdda573b356ade3509c8dbabaf",
+    "report.py": "c528a34bf9dde9ad73d3bc792f9f1b39b24c1881244aa5e8b68b45374dc2e591",
+    "screen.py": "4317090d326a63fcb102510ff3f2dca5cddecd2a0cbfbd200dabefe57a2503de",
+    "sessions.py": "7cfc572ce22b7b77b379c4e7f44d371e3b49a8889c615d2840eee06cfd2ed980",
+    "study.py": "6343d7096a366833d297c5fbf990029ec7d8779bcc727f01a5549c7b7ea11e5a",
+    "universe_audit.py": "5535dd6ca0234c2b406443f3b649346c53ab29a5c39e5b2e235b3b2eef8ff933",
+    "validation.py": "5e7d5c96f4be4b5efb6b74fe811e7cc2152b225b3864b4e9242adbf9aafa053e",
+    "watch.py": "205df533123155f92175b9ea7f2645794f15ef3513ce1c86ea7ee682281625ed"
+  },
+  "archived_config_sha256": "e14208e0a1df0fe44580a8ce8fd4922b779dbee1cc19f3e656f0d5ddb2a3daf9",
+  "session_readiness": {
+    "phase": "NON_TRADING_DAY",
+    "scope": "historical_replay",
+    "expected_session": "2026-11-20",
+    "close_verified": true,
+    "reasons": [],
+    "verified_codes": 800,
+    "verified_share": 1.0
+  },
+  "dependency_versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "pyarrow": "16.1.0",
+    "baostock": "0.9.1",
+    "requests": "2.32.3",
+    "xlrd": "2.0.1"
+  },
+  "sources": {
+    "bars": "BaoStock raw and HFQ",
+    "calendar": "BaoStock query_trade_dates",
+    "benchmark": "BaoStock sh.000906 open/close",
+    "membership": "CSI 000906 official snapshot",
+    "financials": "Eastmoney RPT_LICO_FN_CPD"
+  },
+  "refresh": {
+    "status": "pinned_replay",
+    "source_run": "20261121T055423Z-5d2dadf2"
+  },
+  "history_start": "2025-10-28",
+  "current_financials": {
+    "status": "ok",
+    "rows": 800,
+    "sha256": "3e99d69aa1288e47475ac0be514c1551faa0c82ba0c45956c4e28bb68cc08f39"
+  },
+  "missing_members": []
+}

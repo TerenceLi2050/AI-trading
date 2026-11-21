@@ -1,0 +1,14 @@
+{
+  "signal_date": "2026-11-20",
+  "observed_utc": "2026-11-21T05:54:25+00:00",
+  "run": "D:\\from backup\\20250523\\金融经济学\\AI trading 2\\reports\\runs\\20261121T055423Z-5d2dadf2",
+  "strategy_version": "0fa13d77f1f20d4a",
+  "horizon_sessions": 20,
+  "planned_entry": "2026-11-23",
+  "planned_exit": "2026-12-21",
+  "scope": "published_quality_observation",
+  "picks_sha256": "2bc07e200a589f291a8c74c8f845e3fdbd21628e025776c12c141292221845cb",
+  "config_sha256": "679437234dbbc7b1aef6299d22fc98f90465bffa2f8756e5626729c40f10376e",
+  "manifest_sha256": "f67686e4ff0ad877a161f5bdbe54af3a69fafcf53bfc6ff87c7a4052261fb4c1",
+  "verified_codes": 800
+}

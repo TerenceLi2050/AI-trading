@@ -1,0 +1,55 @@
+{
+  "comparison": "BaoStock direct unadjusted source archive",
+  "securities": {
+    "600519": {
+      "paired_dates": 9,
+      "raw_dates": 9,
+      "raw_first": "2024-06-11",
+      "raw_last": "2024-06-21",
+      "raw_missing_turnover": 0,
+      "raw_missing_float": 0,
+      "baostock_comparable": 9,
+      "baostock_ohlc_matched": 9
+    },
+    "000001": {
+      "paired_dates": 9,
+      "raw_dates": 9,
+      "raw_first": "2024-06-11",
+      "raw_last": "2024-06-21",
+      "raw_missing_turnover": 0,
+      "raw_missing_float": 0,
+      "baostock_comparable": 9,
+      "baostock_ohlc_matched": 9
+    },
+    "000792": {
+      "paired_dates": 4,
+      "raw_dates": 4,
+      "raw_first": "2021-08-10",
+      "raw_last": "2021-08-13",
+      "raw_missing_turnover": 0,
+      "raw_missing_float": 0,
+      "baostock_comparable": 4,
+      "baostock_ohlc_matched": 4
+    },
+    "600485": {
+      "paired_dates": 188,
+      "raw_dates": 188,
+      "raw_first": "2019-07-12",
+      "raw_last": "2020-04-20",
+      "raw_missing_turnover": 188,
+      "raw_missing_float": 188,
+      "baostock_comparable": 0,
+      "baostock_ohlc_matched": 0
+    },
+    "000022": {
+      "paired_dates": 4,
+      "raw_dates": 4,
+      "raw_first": "2018-12-17",
+      "raw_last": "2018-12-20",
+      "raw_missing_turnover": 4,
+      "raw_missing_float": 4,
+      "baostock_comparable": 0,
+      "baostock_ohlc_matched": 0
+    }
+  }
+}

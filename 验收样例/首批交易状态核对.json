@@ -1,0 +1,11 @@
+{
+  "state": "PARTIAL",
+  "verified_rows": 2970,
+  "unresolved_rows": 1080,
+  "status_counts": {
+    "VERIFIED_TRADING": 2970,
+    "STATUS_MISSING": 1080
+  },
+  "member_sessions_without_paired_input": 105155,
+  "canonical": "REGISTERED"
+}

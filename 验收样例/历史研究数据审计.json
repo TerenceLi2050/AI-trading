@@ -1,0 +1,25 @@
+{
+  "state": "BLOCKED",
+  "start": "2024-06-14",
+  "end": "2024-12-30",
+  "reasons": [
+    "可用复权价、原始价或交易状态覆盖不足，135 个交易日，2024-06-14 至 2024-12-30",
+    "时点行业覆盖不足，135 个交易日，2024-06-14 至 2024-12-30",
+    "窗口内有可见财报的成员上限低于最小横截面"
+  ],
+  "sessions": 135,
+  "members_missing_price": 105155,
+  "industry_unknown": 108000,
+  "financial_versions": 3,
+  "financial_securities": 2,
+  "members_with_visible_financials_upper_bound": 1,
+  "input_sha256": {
+    "sessions": "445c009fb213d5838e707c32bb21a7e8f1c7388ae4fe7c48f700b593ac888f63",
+    "market": "d91816038cf41d113ff34f342f7adff9cec033872119a61324a530f40399e6a3",
+    "total_return": "a87a5c854cc7cf16ed1694f4048528aff35d6b3524fc66cd0e4e532f6252c497",
+    "membership": "6bad1fb4a07b0a87a8c5f51641f2a85fbf3dda5a067eba9b58c8e36a462d394b",
+    "quotes": "c8200fcf9f54cc17057b83c6e34e0dffbb34b47f432f2a7db5e91dec9f210b28",
+    "quality": "92b51f51d3f75b9e314ccebc2922ad3923c991c1a4032993a7a0d40c38dfb8ad",
+    "sources": "c7167cb7ae812e3d52251c86039873c5b56e9b9aa75cba291530de52f264d0c2"
+  }
+}

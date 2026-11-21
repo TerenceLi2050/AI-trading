@@ -1,0 +1,20 @@
+{
+  "state": "PARTIAL",
+  "scope": {
+    "kind": "verified_membership_union",
+    "first_interval_start": "2024-06-14",
+    "end_exclusive": "2025-05-31",
+    "membership_sha256": "9e6230bc30c574a16b92e0dfde2231f0638e0529ce0bc18e41c9b65b8ec4a132"
+  },
+  "start": "2016-11-20",
+  "end": "2026-11-20",
+  "requested_codes": 887,
+  "codes_with_pairs": 374,
+  "price_pairs": 856457,
+  "pending": 513,
+  "access": {
+    "state": "OFFLINE"
+  },
+  "coverage": "raw/akshare/bars/1.20.65-20161120-20261120/coverage.csv",
+  "trade_status": "INDEPENDENT_EVIDENCE_REQUIRED"
+}

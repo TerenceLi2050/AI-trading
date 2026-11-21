@@ -1,0 +1,202 @@
+{
+  "scope": {
+    "anchor": "2024-06-01",
+    "start": "2024-06-14",
+    "effective": "2024-06-17",
+    "end": "2024-07-01",
+    "announcement": "2024-05-31",
+    "report_date": "2024-03-31",
+    "anchor_source": "BaoStock query_hs300_stocks + query_zz500_stocks (vendor date 2024-05-27)",
+    "notice_source": "https://www.csindex.com.cn/csindex-home/announcement/queryAnnouncementById?id=15267"
+  },
+  "adjusted_folder": "data/historical_observations/development_bars/20201102-20250531-05ea080d165f",
+  "sources": {
+    "calendar": {
+      "path": "data/input/sessions.csv",
+      "sha256": "c8d829af3041f21c89c593e4a9bde1298e7db2aed79bb2a788517eff53ceebc6",
+      "provider": "BaoStock query_trade_dates"
+    },
+    "observations": {
+      "path": "data/historical_observations/20261120T160346Z/component_samples.csv",
+      "sha256": "05ea080d165f307ffe4e8530ba4be07a5008f6e967871c5b5c8519c4b0d9b208",
+      "provider": "BaoStock component observations"
+    },
+    "raw": {
+      "path": "data/input/raw_history.parquet",
+      "sha256": "7c3f5b1995ab749aa90cde50bc64eeb550782736d5abb8cd9947f89f329c05ad",
+      "provider": "BaoStock raw bars"
+    },
+    "price_index": {
+      "path": "data/historical_pilot/2024-06/sources/csi_000906_price.json",
+      "sha256": "8e2be60e6972166c48a7a23181e5c96d424390b81ba83e84224f8f6d038a50f2",
+      "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=000906&startDate=20240401&endDate=20240701"
+    },
+    "total_return": {
+      "path": "data/historical_observations/20261120T160346Z/h00906_raw.csv",
+      "sha256": "f999f1dee3c41a80e5994c9fa9785282f399bdcc7731e6d1472103ab517c89be",
+      "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=H00906"
+    },
+    "methodology": {
+      "path": "data/historical_pilot/2024-06/sources/csi800_method.pdf",
+      "sha256": "6109ad8390fdad70ed807c799309f7d5cabc1cd949d45754704c7a8acf4d1933",
+      "url": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/indices/detail/files/zh_CN/000906_Index_Methodology_cn.pdf"
+    },
+    "official_notice": {
+      "path": "data/historical_pilot/2024-06/sources/csi_notice_15267.json",
+      "sha256": "4ed0f6f6e62304b1a9934f1ce92ef89f9ab8e66598ee7311462c0b3b27413ea2",
+      "url": "https://www.csindex.com.cn/csindex-home/announcement/queryAnnouncementById?id=15267"
+    },
+    "adjustment_attachment": {
+      "path": "data/historical_pilot/2024-06/sources/csi_20240531_adjustments.pdf",
+      "sha256": "bfcdac63888f3d85e5b9a802041a21a596a12f5479d6767c8229228f2373423f",
+      "url": "https://oss-ch.csindex.com.cn/notice/20240531170829-附件：部分指数样本调整名单.pdf"
+    },
+    "changes": {
+      "path": "data/historical_pilot/2024-06/sources/adjustments.csv",
+      "sha256": "2fedbf24f2005e40783e2698a21f5fa899d015795613e57dec531c313885d072",
+      "derived_from": "adjustment_attachment",
+      "method": "pdftotext -layout, first two tables, code columns"
+    },
+    "rebalance_search": {
+      "path": "data/historical_pilot/2024-06/sources/csi_index_rebalance_announcements.json",
+      "sha256": "09f436c3b55a8e74f28efcde14c1d7f49deb08bd4806c1ffacf9f286f4ff98c6",
+      "url": "https://www.csindex.com.cn/csindex-home/announcement/queryAnnouncementByVonew",
+      "request": {
+        "startDate": "2024-05-01",
+        "endDate": "2024-07-01",
+        "relatedTopics": [
+          "index_rebalance"
+        ],
+        "page": {
+          "page": 1,
+          "rows": 100
+        }
+      },
+      "reviewed_ids": [
+        15225,
+        15234,
+        15237,
+        15262,
+        15266,
+        15267,
+        15269,
+        15271,
+        15281,
+        15284
+      ]
+    },
+    "industry_search": {
+      "path": "data/historical_pilot/2024-06/sources/csi_industry_classification_announcements.json",
+      "sha256": "bc648329815ce6b2d922c4d21b843252884a67cee0b91e04df6cc2f1ab16826b",
+      "url": "https://www.csindex.com.cn/csindex-home/announcement/queryAnnouncementByVonew",
+      "request": {
+        "startDate": "2024-05-01",
+        "endDate": "2024-07-01",
+        "relatedTopics": [
+          "industry_classification"
+        ],
+        "page": {
+          "page": 1,
+          "rows": 100
+        }
+      }
+    },
+    "industry_current": {
+      "path": "data/historical_pilot/2024-06/sources/csi_industry_current.json",
+      "sha256": "978a0e9c79586620adbe4ac11f5fb71b5da171733869afe5bc9d049eb67868a7",
+      "url": "https://www.csindex.com.cn/csindex-home/indexInfo/getsecurityIndustrySearchData"
+    },
+    "industry_requested": {
+      "path": "data/historical_pilot/2024-06/sources/csi_industry_requested_20240617.json",
+      "sha256": "978a0e9c79586620adbe4ac11f5fb71b5da171733869afe5bc9d049eb67868a7",
+      "url": "https://www.csindex.com.cn/csindex-home/indexInfo/getsecurityIndustrySearchData?date=20240617"
+    },
+    "filings": {
+      "path": "data/historical_pilot/2024-06/sources/filings.csv",
+      "sha256": "5e4e70fffaabf3e9361c440fbeb2973254d4dd65a9900c9ea117b570c5f2c347",
+      "method": "Cross-check filed consolidated financial statements"
+    },
+    "pingan_filing": {
+      "path": "data/historical_pilot/2024-06/sources/pingan_2024q1.pdf",
+      "sha256": "9ed22f9d580364b36cac2b93b6cb1d22e5962e36d37833ee4b2b6d12e8a0bf88",
+      "url": "https://static.cninfo.com.cn/finalpage/2024-04-20/1219692666.PDF",
+      "known_date": "2024-04-20",
+      "version": "CNINFO-1219692666"
+    },
+    "pingan_exchange_copy": {
+      "path": "data/historical_pilot/2024-06/sources/szse_pingan_2024q1.pdf",
+      "sha256": "9ed22f9d580364b36cac2b93b6cb1d22e5962e36d37833ee4b2b6d12e8a0bf88",
+      "url": "https://disc.static.szse.cn/disc/disk03/finalpage/2024-04-19/a7e71557-3b07-44f2-acf8-6f0db9581f72.PDF"
+    },
+    "guotai_first_filing": {
+      "path": "data/historical_pilot/2024-06/sources/guotai_2024q1_original.pdf",
+      "sha256": "6617b282a1ba54cbf0662e082b7e6d5d1f90db0e831181b7dfa6c79b85632c71",
+      "url": "https://disc.static.szse.cn/disc/disk03/finalpage/2024-04-26/2655fab0-032f-4442-84b9-e355418943fd.PDF",
+      "known_date": "2024-04-26",
+      "version": "SZSE-002091-2024-24"
+    },
+    "guotai_correction_notice": {
+      "path": "data/historical_pilot/2024-06/sources/guotai_2024q1_correction.pdf",
+      "sha256": "5a4aa66811b49142ce459a3b97084c06525fe8fd5dadc94926624751231b403e",
+      "url": "https://disc.static.szse.cn/disc/disk03/finalpage/2024-05-07/1dd9570a-626c-4f1c-b0f1-fc467e09a281.PDF"
+    },
+    "guotai_corrected_filing": {
+      "path": "data/historical_pilot/2024-06/sources/guotai_2024q1_revised.pdf",
+      "sha256": "93315928fc6f1fefd0b5dcef1efacc374cc17396491be4a4c82ff641daf09fb2",
+      "url": "https://static.cninfo.com.cn/finalpage/2024-05-08/1219998596.PDF",
+      "known_date": "2024-05-08",
+      "version": "CNINFO-1219998596"
+    }
+  },
+  "filing_checks": [
+    {
+      "code": "000001",
+      "date": "2024-04-01",
+      "report_date": "2024-03-31",
+      "expected_version": ""
+    },
+    {
+      "code": "000001",
+      "date": "2024-04-19",
+      "report_date": "2024-03-31",
+      "expected_version": ""
+    },
+    {
+      "code": "000001",
+      "date": "2024-04-22",
+      "report_date": "2024-03-31",
+      "expected_version": "CNINFO-1219692666"
+    },
+    {
+      "code": "002091",
+      "date": "2024-04-26",
+      "report_date": "2024-03-31",
+      "expected_version": ""
+    },
+    {
+      "code": "002091",
+      "date": "2024-04-29",
+      "report_date": "2024-03-31",
+      "expected_version": "SZSE-002091-2024-24"
+    },
+    {
+      "code": "002091",
+      "date": "2024-05-07",
+      "report_date": "2024-03-31",
+      "expected_version": "SZSE-002091-2024-24"
+    },
+    {
+      "code": "002091",
+      "date": "2024-05-08",
+      "report_date": "2024-03-31",
+      "expected_version": "SZSE-002091-2024-24"
+    },
+    {
+      "code": "002091",
+      "date": "2024-05-09",
+      "report_date": "2024-03-31",
+      "expected_version": "CNINFO-1219998596"
+    }
+  ],
+  "baostock_retry_after_utc": "2026-11-22T05:45:58+00:00"
+}
